@@ -1,0 +1,13 @@
+---
+- name: IOS Facts
+  hosts: wlc
+  connection: network_cli
+  gather_facts: false
+  tasks:
+    - name: Gather all legacy facts
+      cisco.ios.ios_facts:
+        gather_subset: all
+      register: facts1
+    - name: Show facts
+      ansible.builtin.debug:
+        msg: "{{ facts1 }}"
