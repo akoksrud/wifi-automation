@@ -1,0 +1,15 @@
+---
+- name: IOS Facts
+  hosts: wlc
+  connection: network_cli
+  gather_facts: false
+  tasks:
+    - name: Gather all legacy facts
+      cisco.ios.ios_facts:
+        gather_subset: all
+      register: facts1
+    - name: Write run-config to file
+      ansible.builtin.copy:
+        content: "{{ facts1.ansible_facts.ansible_net_config }}"
+        dest: "{{ './' + facts1.ansible_facts.ansible_net_hostname + '-run-conf.txt' }}"
+        mode: "0600"
