@@ -1,7 +1,5 @@
 import requests
 import pandas as pd
-import json
-import openpyxl
 import getpass
 
 wlc = input("Enter WLC IP: ")
@@ -17,6 +15,9 @@ headers = {
 
 response = requests.get(url, auth=(user, password), headers=headers, data=payload, verify=False)
 
-ap_table = pd.json_normalize(response.json()['Cisco-IOS-XE-wireless-access-point-oper:capwap-data'])
-print(ap_table)
-ap_table.to_excel('ap_table.xlsx')
+if (response.status_code==200):
+    ap_table = pd.json_normalize(response.json()['Cisco-IOS-XE-wireless-access-point-oper:capwap-data'])
+    print(ap_table)
+    ap_table.to_excel('ap_table.xlsx')
+else:
+    print(f"Status code: {response.status_code}: {response.reason}")
