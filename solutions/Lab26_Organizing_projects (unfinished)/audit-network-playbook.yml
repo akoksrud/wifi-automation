@@ -1,0 +1,7 @@
+---
+- name: Audit WLCs
+  ansible.builtin.import_playbook: audit_playbooks/audit-wlcs-playbook.yml
+- name: Audit switches
+  ansible.builtin.import_playbook: audit_playbooks/audit-switches-playbook.yml
+- name: Audit routers
+  ansible.builtin.import_playbook: audit_playbooks/audit-routers-playbook.yml

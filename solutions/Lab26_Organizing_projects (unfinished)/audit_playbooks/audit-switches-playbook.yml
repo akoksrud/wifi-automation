@@ -1,0 +1,13 @@
+---
+- name: Audit switches
+  hosts: switch
+  connection: network_cli
+  gather_facts: false
+  tasks:
+    - name: Gather IOS facts
+      cisco.ios.ios_facts:
+        gather_subset: all
+      register: facts1
+    - name: Output hostname and version
+      ansible.builtin.debug:
+        msg: "Hostname: {{ facts1.ansible_facts.ansible_net_hostname }} (version {{ facts1.ansible_facts.ansible_net_version }})"
