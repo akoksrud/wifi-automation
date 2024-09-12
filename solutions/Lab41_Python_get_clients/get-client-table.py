@@ -13,9 +13,8 @@ headers = {
   }
 
 response = requests.get(url, auth=(user, password), headers=headers, data=payload, verify=False)
-
 if (response.status_code==200):
-    ap_table = pd.json_normalize(response.json()['Cisco-IOS-XE-wireless-client-oper:client-oper-data'])
+    ap_table = pd.json_normalize(response.json()['Cisco-IOS-XE-wireless-client-oper:common-oper-data'])
     print(ap_table)
     ap_table.to_excel('ap_table.xlsx')
 else:
