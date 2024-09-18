@@ -8,10 +8,14 @@
 
     - name: "Configure policy profile: clients_policy_profile"
       cisco.ios.ios_config:
+        before:
+          - wireless profile policy clients_policy_profile
+          - shutdown
         lines:
           - idle-timeout 3000
           - passive-client
           - session-timeout 43200
           - vlan 11
+        after:
           - no shutdown
         parents: wireless profile policy clients_policy_profile

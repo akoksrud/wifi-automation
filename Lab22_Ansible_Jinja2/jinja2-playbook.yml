@@ -1,0 +1,18 @@
+---
+- name: CLI configuration using Jinja2 template
+  hosts: wlc
+  connection: network_cli
+  gather_facts: false
+
+  tasks:
+
+    - name: "Configure policy profile from template: {{ item.name }}"
+      cisco.ios.ios_config:
+        before:
+          - wireless profile policy {{ item.name }}
+          - shutdown
+        src: policy_profile_template.j2
+        match: line
+        after:
+          - no shutdown
+      loop: "{{ policy_profiles }}"
