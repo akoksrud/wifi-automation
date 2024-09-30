@@ -19,5 +19,6 @@ if (response.status_code==200):
     ap_table = pd.json_normalize(response.json()['Cisco-IOS-XE-wireless-access-point-oper:capwap-data'])
     print(ap_table)
     ap_table.to_excel('ap_table.xlsx')
+    ap_table.to_csv('ap_table.csv')
 else:
     print(f"Status code: {response.status_code}: {response.reason}")
