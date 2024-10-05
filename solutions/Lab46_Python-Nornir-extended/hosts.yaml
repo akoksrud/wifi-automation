@@ -1,0 +1,6 @@
+---
+your_wlc:
+   hostname: 192.168.10.10
+
+shared_wlc:
+   hostname: 192.168.10.9
