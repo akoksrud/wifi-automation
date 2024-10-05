@@ -1,4 +1,3 @@
-import getpass
 import datetime
 from netmiko import ConnectHandler
 from dotenv import dotenv_values
