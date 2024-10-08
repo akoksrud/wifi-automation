@@ -1,0 +1,31 @@
+---
+
+- name: RESTCONF demo playbook
+  hosts: wlc
+  connection: network_cli
+  gather_facts: false
+
+  tasks:
+
+    - name: "Get Certificate list with RESTCONF"
+      ansible.builtin.uri:
+        url: "https://{{ ansible_host }}/restconf/data/Cisco-IOS-XE-crypto-pki-oper:crypto-pki-oper-data/crypto-pki-bundle?fields=label;cert/subject-name;cert/validity-end"
+        user: "{{ ansible_user }}"
+        password: "{{ ansible_password }}"
+        method: GET
+        headers:
+          Content-Type: 'application/yang-data+json'
+          Accept: 'application/yang-data+json'
+        body_format: json
+        body:
+        validate_certs: false
+        status_code:
+          - 200
+          - 204
+          - 404
+      register: result
+
+    - name: "View result"
+      ansible.builtin.debug:
+        msg: "{{ result['json']['Cisco-IOS-XE-crypto-pki-oper:crypto-pki-bundle'] }}"
+      when: result.status == 200
