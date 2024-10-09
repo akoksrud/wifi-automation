@@ -1,0 +1,7 @@
+{
+    "changed": false,
+    "comments": "RESTCONF status: Enabled",
+    "failed": false,
+    "hostname": "wlc9",
+    "restconf_enabled": true
+}

@@ -1,0 +1,25 @@
+---
+
+- name: Module demo
+  hosts: wlc
+  connection: network_cli
+  gather_facts: false
+
+  tasks:
+
+    - name: Gather IOS facts
+      cisco.ios.ios_facts:
+        gather_subset: all
+      register: facts
+
+    - name: Check if RESTCONF is enabled
+      check_restconf_status:
+        hostname: "{{ facts.ansible_facts.ansible_net_hostname }}"
+        show_run: "{{ facts.ansible_facts.ansible_net_config }}"
+      register: result
+
+    - name: Write results to YAML file
+      ansible.builtin.copy:
+        dest: "./logs/audit_{{ facts.ansible_facts.ansible_net_hostname }} ({{ '%Y-%m-%d' | strftime }}).yml"
+        mode: "0600"
+        content: "{{ result | to_nice_yaml }}"

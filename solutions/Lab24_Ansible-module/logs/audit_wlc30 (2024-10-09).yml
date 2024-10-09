@@ -1,0 +1,5 @@
+changed: false
+comments: 'RESTCONF status: Enabled'
+failed: false
+hostname: wlc30
+restconf_enabled: true
