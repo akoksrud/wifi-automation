@@ -1,0 +1,9 @@
+---
+- name: "Get Max APs supported with CLI command"
+  cisco.ios.ios_command:
+    commands: "show wireless summary | include Max APs"
+  register: result
+
+- name: "View result"
+  ansible.builtin.debug:
+    msg: "{{ result.stdout }}"

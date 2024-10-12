@@ -1,0 +1,14 @@
+---
+- name: Get version from all Cisco devices
+  hosts: all
+  connection: network_cli
+  gather_facts: false
+  roles:
+    - get_version
+
+- name: Get max APs
+  hosts: wlc
+  connection: network_cli
+  gather_facts: false
+  roles:
+    - get_max_aps
