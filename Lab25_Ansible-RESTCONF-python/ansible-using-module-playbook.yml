@@ -1,0 +1,59 @@
+---
+
+- name: Interface Playbook
+  hosts: wlc
+  connection: network_cli
+  gather_facts: false
+
+  tasks:
+
+    - name: Get Interface list with RESTCONF
+      ansible.builtin.uri:
+        url: "https://{{ ansible_host }}/restconf/data/Cisco-IOS-XE-native:native/interface?fields=GigabitEthernet/name;GigabitEthernet/description"
+        user: "{{ ansible_user }}"
+        password: "{{ ansible_password }}"
+        method: GET
+        headers:
+          Content-Type: 'application/yang-data+json'
+          Accept: 'application/yang-data+json'
+        body_format: json
+        body:
+        validate_certs: false
+        status_code:
+          - 200
+          - 204
+          - 404
+      register: restconf_result
+
+    - name: Do something with the interface list in a Python module
+      update_description:
+        interface_dict: "{{ restconf_result['json'] }}"
+      register: update_description_result
+      when: restconf_result.status == 200
+
+    - name: View result
+      ansible.builtin.debug:
+        msg: "{{ update_description_result }}"
+      when: restconf_result.status == 200
+
+    - name: Update Interface list with RESTCONF
+      ansible.builtin.uri:
+        url: "https://{{ ansible_host }}/restconf/data/Cisco-IOS-XE-native:native/interface"
+        user: "{{ ansible_user }}"
+        password: "{{ ansible_password }}"
+        method: PATCH
+        headers:
+          Content-Type: 'application/yang-data+json'
+        body_format: json
+        body: "{{ update_description_result.new_interface_dict }}"
+        validate_certs: false
+        status_code:
+          - 200
+          - 204
+          - 404
+      register: restconf_write_result
+
+    - name: View result from RESTCONF write
+      ansible.builtin.debug:
+        msg: "{{ restconf_write_result }}"
+      when: restconf_write_result.status == 200
