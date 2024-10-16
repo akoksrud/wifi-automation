@@ -56,4 +56,4 @@
     - name: View result from RESTCONF write
       ansible.builtin.debug:
         msg: "{{ restconf_write_result }}"
-      when: restconf_write_result.status == 200
+      when: restconf_write_result.status == 204
