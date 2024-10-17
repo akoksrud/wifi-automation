@@ -25,6 +25,11 @@
           - 404
       register: restconf_result
 
+    - name: View result from RESTCONF
+      ansible.builtin.debug:
+        msg: "{{ restconf_result }}"
+      when: restconf_result.status == 200
+
     - name: Do something with the interface list in a Python module
       update_description:
         interface_dict: "{{ restconf_result['json'] }}"
