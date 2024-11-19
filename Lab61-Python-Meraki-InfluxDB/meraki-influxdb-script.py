@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 from dotenv import dotenv_values
 import requests
 import json
+import time
 
 # Import variables from the .env file
 env = dotenv_values('.env')
@@ -30,43 +31,40 @@ def get_channel_utilization():
     response = requests.request("GET", url, headers=headers, data=payload)
     return response.text
 
-def update_influxDB():
+def update_influxDB(measurement_name, hostname, fields):
     timestamp = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     json_body = [
         {
-            "measurement": "ap_stats",
+            "measurement": measurement_name,
             "tags": {
-                "host": "AP_name",
+                "host": hostname,
             },
             "time": timestamp,
-            "fields": {
-                "value": 0.66,
-                "value2" : 1.33,
-                "textfield": "text"
-            }
+            "fields": fields
         }
     ]
-
-    client = InfluxDBClient('localhost', 8086, 'devnet-adm', 'ChangeMe2025!', 'syslog-db')
+    client = InfluxDBClient('localhost', 8086, 'devnet-adm', 'ChangeMe2025!', 'cloud-ap-db')
     client.write_points(json_body)
-    result = client.query('select value from cpu_load_short;')
-    print("Result: {0}".format(result))
+    print(f"Updated InfluxDB with data from {hostname} at {timestamp}")
 
 # Iterate through all devices and do stuff
 def iterate_access_points():
     devices = json.loads(get_devices())
     utilization = json.loads(get_channel_utilization())
     ap_serial_map = {}
+    interference = {}
     for device in devices:
         if device['productType'] == "wireless":
             ap_serial_map[device['serial']] = device['name']
     for util in utilization:
         serial = util['serial']
+        interference[serial] = {}
         for band in util['byBand']:
-            wifi = band['wifi']['percentage']
-            nonwifi = band['nonWifi']['percentage']
-            total = band['total']['percentage']
-        print(f'{ap_serial_map[serial]} (S/N: {serial}), WiFi: {wifi}%, Non-WiFi: {nonwifi}%, Total: {total}%')
+            interference[serial][band['band']+"GHz Wi-Fi"] = band['wifi']['percentage']
+            interference[serial][band['band']+"GHz non-Wi-Fi"] = band['nonWifi']['percentage']
+            interference[serial][band['band']+"GHz Total"] = band['total']['percentage']
+        update_influxDB('ch_utilization', ap_serial_map[serial], interference[serial])
 
-
-iterate_access_points()
+while True:
+    iterate_access_points()
+    time.sleep(10)
