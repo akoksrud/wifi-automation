@@ -8,8 +8,7 @@ import time
 # Import variables from the .env file
 env = dotenv_values('.env')
 apiKey = env['apiKey']
-organizationId=env['organizationId']
-networkId=env['networkId']
+organizationId=env['orgId']
 
 def get_devices():
     url = f"https://api.meraki.com/api/v1/organizations/{organizationId}/devices"
