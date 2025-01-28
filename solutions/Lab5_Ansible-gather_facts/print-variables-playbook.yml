@@ -1,0 +1,17 @@
+# This is a sample playbook to show how to print inventory variables
+---
+- name: Show inventory variables
+  hosts: all
+  connection: network_cli
+  gather_facts: false
+  tasks:
+
+# Print the inventory variables
+    - name: Show vars
+      ansible.builtin.debug:
+        msg: "{{ hostvars }}"
+
+# Print the groups, or any other variable you want to see, they are globally available
+    - name: Show one variable
+      ansible.builtin.debug:
+        msg: "{{ groups }}"
