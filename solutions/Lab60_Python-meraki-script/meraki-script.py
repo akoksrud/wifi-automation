@@ -4,7 +4,7 @@ import requests
 # Import variables from the .env file
 env = dotenv_values('.env')
 apiKey = env['apiKey']
-organizationId=env['organizationId']
+organizationId=env['orgId']
 networkId=env['networkId']
 serial=env['serial']
 
