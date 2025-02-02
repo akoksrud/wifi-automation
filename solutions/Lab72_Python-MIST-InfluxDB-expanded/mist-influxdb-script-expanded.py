@@ -52,6 +52,28 @@ def iterate_access_points():
                 interference[bandname+"GHz non-Wi-Fi"] = device['radio_stat'][band]['util_non_wifi']
                 interference[bandname+"GHz Total"] = device['radio_stat'][band]['util_all']
             update_influxDB('ch_utilization', device['name'], interference)
+            
+            channel_history = {}
+            for band in device['radio_stat']:
+                if band=="band_24": bandname = "2.4"
+                if band=="band_5": bandname = "5"
+                if band=="band_6": bandname = "6"
+                channel_history[bandname+"GHz #Clients"] = device['radio_stat'][band]['num_clients']
+                channel_history[bandname+"GHz Channel"] = device['radio_stat'][band]['channel']
+                channel_history[bandname+"GHz Bandwidth"] = device['radio_stat'][band]['bandwidth']
+                channel_history[bandname+"GHz TxPower"] = device['radio_stat'][band]['power']
+            update_influxDB('channel_history', device['name'], channel_history)
+
+            device_info = {}
+            device_info['model'] = device['model']
+            device_info['ip'] = device['ip']
+            device_info['ext_ip'] = device['ext_ip']
+            device_info['mount'] = device['mount']
+            device_info['power_src'] = device['power_src']
+            device_info['mac'] = device['mac']
+            device_info['radio_mac'] = device['radio_stat']['band_5']['mac']
+            update_influxDB('device_info', device['name'], device_info)
+
 
 while True:
     iterate_access_points()
