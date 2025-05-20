@@ -1,4 +1,6 @@
 # Table of contents
 
-* [Welcome](README.md)
-* [Topology](topology.md)
+## Welcome
+
+* [Introduction](README.md)
+* [Topology](welcome/topology.md)
