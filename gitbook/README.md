@@ -16,11 +16,15 @@ You need some SSH libraries like OpenSSH installed to run these commands. They s
 
 #### Create a SSH keypair for your user
 
-(change the comment to something of your choice)
+(change the comment and filename to something of your choice)
 
 ```bash
-PS C:\> ssh-keygen -t ed25519 -C "akoksrud_2025"
+PS C:\> ssh-keygen -t ed25519 -C "akoksrud_2025" -f "akoksrud_2025"
 ```
+
+You should use a password for the private key for security reasons.
+
+If you do not specify a filename (the -f option) the default name will be "id\_ed25519". It will be used in the examples below.
 
 Your key pair will be stored in the ".ssh" folder in your home directory, and will be named&#x20;
 
@@ -36,10 +40,7 @@ Mode                 LastWriteTime         Length Name
 (...)
 ```
 
-#### About private and public key
+#### Copying the key to a Linux server
 
-You can password protect your private key with the following command. It will be much safer if your machine is  lost or compromised, at the cost of having to type your password when using the key
 
-```bash
-ssh-keygen -p -f ~/.ssh/id_ed25519
-```
+
