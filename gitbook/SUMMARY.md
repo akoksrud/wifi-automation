@@ -3,7 +3,7 @@
 ## Day 1 - A taste of everything
 
 * [11. Finish the pre-lab tasks](README.md)
-* [12. Test the lab environment](day-1-a-taste-of-everything/12.-test-the-lab-environment.md)
+* [Test the lab environment](day-1-a-taste-of-everything/test-the-lab-environment.md)
 * [13. Explore VS Code](day-1-a-taste-of-everything/13.-explore-vs-code.md)
 * [14. Install Ansible](day-1-a-taste-of-everything/14.-install-ansible.md)
 * [15. Explore Ansible](day-1-a-taste-of-everything/15.-explore-ansible.md)
