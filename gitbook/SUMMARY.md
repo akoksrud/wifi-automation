@@ -4,7 +4,7 @@
 
 * [Agenda / timing suggestion](README.md)
 * [Finish the pre-lab tasks](day-1-a-taste-of-everything/finish-the-pre-lab-tasks.md)
-* [Test the lab environment](day-1-a-taste-of-everything/test-the-lab-environment/README.md)
+* [Test the lab environment](day-1-a-taste-of-everything/test-the-lab-environment.md)
   * [Change to static IP (Multipass)](day-1-a-taste-of-everything/test-the-lab-environment/change-to-static-ip-multipass.md)
   * [Change to static IP](day-1-a-taste-of-everything/test-the-lab-environment/change-to-static-ip.md)
 * [Explore VS Code](day-1-a-taste-of-everything/explore-vs-code.md)
