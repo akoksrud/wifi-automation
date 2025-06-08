@@ -40,7 +40,16 @@ Mode                 LastWriteTime         Length Name
 (...)
 ```
 
-#### Copying the key to a Linux server
+#### Copying the public key to a Linux server
 
+To copy your public key to a Linux server, enter the following command. It should work on both Windows (using Powershell), MacOS and Linux.&#x20;
 
+{% code fullWidth="true" %}
+```bash
+cat ~/.ssh/id_ed25519.pub | ssh devnet-adm@{SERVER_IP} "cat >> .ssh/authorized_keys"
+
+# Change {SERVER_IP} to your server's IP, it will be like this:
+cat ~/.ssh/id_ed25519.pub | ssh devnet-adm@192.168.10.7 "cat >> .ssh/authorized_keys"
+```
+{% endcode %}
 
