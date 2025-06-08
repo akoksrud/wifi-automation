@@ -16,15 +16,14 @@ You need some SSH libraries like OpenSSH installed to run these commands. They s
 
 #### Create a SSH keypair for your user
 
-(change the comment and filename to something of your choice)
+* Change the comment to something of your choice
+* You can specify a filename using -f "akoksrud\_2025" (as an example). The default filename will be "id\_ed25519", which will be used in the following examples.
 
 ```bash
-PS C:\> ssh-keygen -t ed25519 -C "akoksrud_2025" -f "akoksrud_2025"
+PS C:\> ssh-keygen -t ed25519 -C "akoksrud_2025"
 ```
 
 You should use a password for the private key for security reasons.
-
-If you do not specify a filename (the -f option) the default name will be "id\_ed25519". It will be used in the examples below.
 
 Your key pair will be stored in the ".ssh" folder in your home directory, and will be named&#x20;
 
@@ -42,7 +41,15 @@ Mode                 LastWriteTime         Length Name
 
 #### Copying the public key to a Linux server
 
-To copy your public key to a Linux server, enter the following command. It should work on both Windows (using Powershell), MacOS and Linux.&#x20;
+First, test that you can log in using usnername and password
+
+```bash
+PS C:\Users\akoksrud> ssh -l devnet-adm 192.168.10.7
+devnet-adm@192.168.10.7's password:
+devnet-adm@ubuntu-7:~$ exit
+```
+
+Then, to copy your public key to the server, enter the following command. It should work on both Windows (using Powershell), MacOS and Linux.&#x20;
 
 {% code fullWidth="true" %}
 ```bash
@@ -53,3 +60,4 @@ cat ~/.ssh/id_ed25519.pub | ssh devnet-adm@192.168.10.7 "cat >> .ssh/authorized_
 ```
 {% endcode %}
 
+When you login to the server using SSH, you will use the certificate and not be asked for the password
