@@ -22,4 +22,4 @@ You have admin access to all shared devices, please don't mess up for each other
 * [ ] Access from the WLC to your Ubuntu Server
   * Ping from your designated WLC to your Ubuntu VM
 
-When done, go to the next chapter: [Explore VS Code](explore-vs-code.md)
+When done, go to the next chapter: [Explore VS Code](explore-vs-code/)
