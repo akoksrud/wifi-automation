@@ -19,7 +19,7 @@ If you are using Multipass, it creates two network adapters. Please follow these
 
 Check that the bridged network is correct. Choose your USB dongle or ethernet port etc
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 Copy the netplan config file to a new file and backup the old one
 
