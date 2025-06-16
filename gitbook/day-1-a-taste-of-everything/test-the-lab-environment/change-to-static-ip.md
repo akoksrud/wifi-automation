@@ -29,7 +29,7 @@ Check your network adapters name
 netplan status | grep network
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Copy the netplan config file to a new file and backup the old one
 
