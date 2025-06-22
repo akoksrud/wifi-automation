@@ -1,5 +1,13 @@
 # Create a virtual environment
 
+#### What is a virtual environment?
+
+When working with Python it is best practice to use a "virtual environment" for each project. In a virtual environment you have full control of which packages are installed (and which Python version), so the application or script run in a deterministic environment. To keep the complexity as low as possible, for this deep dive we will consider the whole lab as a single project, with one common virtual environment.
+
+A virtual environment are often called a "venv", and have a few common places to be defined. We will use a subfolder in the project direcory, called `.venv/`
+
+Other project files are also common, but for this deep dive we will not  need them so we keep it out of scope. The last section on this page will give you some more pointers/links.
+
 #### Install UV
 
 We will use "uv" for managing virtual environments and packages in Python. We start by installing uv from the newly opened terminal
@@ -19,11 +27,11 @@ cd ~/wifi-automation
 uv venv
 ```
 
-You will notice a new folder has been created: `~/wifi-automation/.venv`. You could have whatever name you like, but by using the default name it will make things easier when working in VS Code, as it will automatically recognize and use the virtual environment when you open the \~/wifi-automation folder.
+You will notice a new folder has been created: `~/wifi-automation/.venv`. You could have whatever name you like, but by using the default name it will make things easier when working in VS Code, as it will automatically recognize and use the virtual environment when you open the `~/wifi-automation/` folder.
 
 #### Open a Python file
 
-Now you can go to the file explorer, find the "examples" folder and open the `python-hello-world.py` file:
+Now you can go to the file explorer, find the "examples" folder and open the `python-hello-world.py` file that we briefly opened earlier. If you still have it open, great :)
 
 <div align="left"><figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure></div>
 
@@ -35,6 +43,19 @@ The text in the lower right corner will change to indicate you are using the vir
 
 <div align="left"><figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-If you (re)open the built-in terminal, the virtual environment will be auto-activated as well
+If you (re)open the built-in terminal, the virtual environment will be auto-activated as well. You will see the name of your venv in parentheses at the start of the terminal line.
+
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+If you use a customized shell it might show some other info, like which git branch you are working on ("main"), and the python version of your venv (v3.12.3).
 
 <div align="left"><figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure></div>
+
+#### Other project files
+
+To read more about initializing a project from scratch, check out the following links:
+
+{% embed url="https://docs.astral.sh/uv/guides/projects/" %}
+
+{% embed url="https://docs.astral.sh/uv/guides/scripts/" %}
+

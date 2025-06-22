@@ -12,7 +12,6 @@
   * [Install extensions to the server](day-1-a-taste-of-everything/explore-vs-code/install-extensions-to-the-server.md)
   * [Open Folder and example files](day-1-a-taste-of-everything/explore-vs-code/open-folder-and-example-files.md)
   * [Terminal in VS Code](day-1-a-taste-of-everything/explore-vs-code/terminal-in-vs-code.md)
-  * [Virtual environments](day-1-a-taste-of-everything/explore-vs-code/virtual-environments.md)
 * [Create a virtual environment](day-1-a-taste-of-everything/create-a-virtual-environment.md)
 * [Install Ansible](day-1-a-taste-of-everything/install-ansible.md)
 * [Explore Ansible](day-1-a-taste-of-everything/explore-ansible.md)
