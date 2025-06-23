@@ -8,9 +8,13 @@ A virtual environment are often called a "venv", and have a few common places to
 
 Other project files are also common, but for this deep dive we will not  need them so we keep it out of scope. The last section on this page will give you some more pointers/links.
 
+#### UV and its alternatives
+
+In this deep dive we will use uv ([https://docs.astral.sh/uv](https://docs.astral.sh/uv/)) for managing virtual environments and packages i Python. Some other popular alternatives are pip for managing packages, and virtualenv for managing virtual environments. UV can also replace other tools that we do not touch in this deep dive, like poetry and twine.
+
 #### Install UV
 
-We will use "uv" for managing virtual environments and packages in Python. We start by installing uv from the newly opened terminal
+We start by installing uv from the newly opened terminal in VS Code, to our server.
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -20,7 +24,7 @@ After installing, restart your shell (exit and re-open the terminal, or source \
 
 #### Create a virtual environment
 
-To use various packages in Python, we create a Python virtual environment (venv). We use uv do to this. Then we can add various packages which we can use ("import") in our Python scripts. Make sure you are in the \~/wifi-automation folder, then use uv to create a venv.
+To use various packages in Python, we create a Python virtual environment (venv). Then we can add various packages which we can use ("import") in our Python scripts. Make sure you are in the \~/wifi-automation folder, then use uv to create a venv. We will create a single virtual environment for all of our needs in this deep dive, in the "wifi-autmation" folder.
 
 ```
 cd ~/wifi-automation
