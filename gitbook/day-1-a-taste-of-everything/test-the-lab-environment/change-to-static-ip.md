@@ -51,39 +51,19 @@ It looks like this (ish):
 network:
   version: 2
   ethernets:
-    default:
-      match:
-        macaddress: "52:54:00:cb:dc:82"
-      dhcp-identifier: "mac"
+    eth0:
       dhcp4: true
-    extra0:
-      match:
-        macaddress: "52:54:00:8f:54:67"
-      optional: true
-      dhcp-identifier: "mac"
-      dhcp4: true
-      dhcp4-overrides:
-        route-metric: 200
 ```
 
-Change the "extra0" part to disable dhcp4 and insert the static IP\
-Insert your pod IP instead of the {YOUR\_POD\_IP} placeholder...
+Change the file to disable dhcp4 and insert the static IP\
+Insert your pod IP instead of the {YOUR\_POD\_IP} placeholder...\
+(if the version: 2 is placed lower, it will not matter)
 
 ```yaml
-# Do not change this first part (including you don't have to write this comment...)
 network:
   version: 2
-  ethernets:
-    default:
-      match:
-        macaddress: "52:54:00:cb:dc:82"
-      dhcp-identifier: "mac"
-      dhcp4: true
-    extra0:
-      match:
-        macaddress: "52:54:00:8f:54:67"
-# Changed from here and down
       dhcp4: false
+      dhcp6: false
       addresses:
       - 192.168.10.{YOUR_POD_IP}/24
       routes:
