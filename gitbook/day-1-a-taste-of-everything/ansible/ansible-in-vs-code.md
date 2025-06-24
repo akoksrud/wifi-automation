@@ -20,6 +20,6 @@ If not auto detected, file type can be changed for open files:
 
 There are several methods to "help" VS Code recognize your files as ansible playbooks. This will give relevant coloring rules for Ansible. If not it will be recognized as standard YAML which is OK, but the Ansible coloring rules are more specialized to help with Ansible playbooks.
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28).png" alt="" width="563"><figcaption></figcaption></figure>
 
 All Ansible playbooks in this deep dive will have names ending with "-playbook.yml"
