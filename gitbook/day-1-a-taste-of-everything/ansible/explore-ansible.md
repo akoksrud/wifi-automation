@@ -155,30 +155,122 @@ ansible-playbook -i hosts.yml gather-facts-playbook.yml
 
 ### Use return values
 
+If we take a look at the last part of our playbook, we can see the variable "facts1", which is populated with data in the line `register: facts1` and used in the line `msg: "{{ facts1 }}"` .
 
+<figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
+This variable is a dictionary, and you can pull any subset of information by using dot-notation or bracket-notation for accessing dictionaries. Let us try this in a couple of examples.&#x20;
 
+* [ ] Find the values to use, by browsing the output from the previous play.&#x20;
+  * The section marked "1." is the first level to use, and will return everything at that level (essentially, everything below).&#x20;
+  * The two section marked "2." are at the second level in the dictionary (JSON represented here), and if we specify one of those they will return only the corresponding blue marked sections.
+  * Let us try it out, so it will hopefully make some sense :)
 
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure></div>
 
+* [ ] Use dot-notation to return the value from "ansible\_net\_hostname".&#x20;
 
+<figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
+Save the file, then run the playbook again.
 
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure></div>
 
+* [ ] Use bracket-notation to return the value from "ansible\_net\_interfaces". Notice that when you use double quotes on the outside of the statement, you MUST use single quotes inside. You can do the opposite also, but you can NOT use the same type of quotes when you have to use quotes inside a quoted statement. This is true for most programming languages.
 
+<figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
+Again, save the file... then run the playbook again.
+
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure></div>
+
+* [ ] Use the run-config which was returned as a part of the "facts1" dictionary in a new task that will save this to a file
+  * First, remove the "Show facts" task
+  * Create a new task instead, with name "Write run-config to file"
+  * Use the "ansible.builtin.copy" module
+    * Documentation on Ansible Community Documentation: [https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy\_module.html](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html)
+
+{% code fullWidth="true" %}
+```yaml
+---
+- name: IOS Facts
+  hosts: wlc
+  connection: network_cli
+  gather_facts: no
+  tasks:
+    - name: Gather all legacy facts
+      cisco.ios.ios_facts:
+        gather_subset: all
+      register: facts1
+    - name: Write run-config to file
+      ansible.builtin.copy:
+        content: "{{ facts1.ansible_facts.ansible_net_config }}"
+        dest: "{{ './' + facts1.ansible_facts.ansible_net_hostname + '-run-conf.txt' }}"
+
+```
+{% endcode %}
+
+We are using both the "ansible\_net\_config" and the "ansible\_net\_hostname" in this example
+
+<figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+
+Save the file. Don't mind if you get a couple of linting errors, we will fix them shortly...  For now, run the playbook again.&#x20;
+
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure></div>
+
+Notice a new file has been created, with the run-config.
+
+<figure><img src="../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+
+Now.... imagine doing this same task, just changing the inventory to contain all your switches and WLCs? If you want to try it out, just change the inventory to contain all WLCs in this deep dive lab
+
+<figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 ### Linting errors - and fixing them
 
+If you copied the contents of the playbook above, you should get two linting errors when you saved the file. The first one you might be able to work out yourself how to fix. And you can try the second one as well by following the link in the message, and maybe some help from the internet or an AI assistant. Or just read below and follow along for the solutions
 
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure></div>
 
+The first linting error is because Ansible want boolean operators to be either <kbd>true</kbd> or <kbd>false</kbd> . That means that <kbd>yes</kbd>, <kbd>no</kbd>, <kbd>True</kbd>, <kbd>False</kbd>, <kbd>0</kbd> or <kbd>1</kbd> is not valid, even though some of them might work perfectly fine. We fix this error by replacing <kbd>no</kbd> with <kbd>false</kbd>.
 
+```yaml
+  gather_facts: false
+```
 
+The second linting error is because when writing files (by using copy or other file writing modules) you should always explicitly specify the file permissions. We fix this by adding the line <kbd>mode: "0600"</kbd>
 
+```yaml
+        mode: "0600"
+```
 
+The playbook should look like this:
 
+<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
+{% code fullWidth="true" %}
+```yaml
+---
+- name: IOS Facts
+  hosts: wlc
+  connection: network_cli
+  gather_facts: false
+  tasks:
+    - name: Gather all legacy facts
+      cisco.ios.ios_facts:
+        gather_subset: all
+      register: facts1
+    - name: Write run-config to file
+      ansible.builtin.copy:
+        content: "{{ facts1.ansible_facts.ansible_net_config }}"
+        dest: "{{ './' + facts1.ansible_facts.ansible_net_hostname + '-run-conf.txt' }}"
+        mode: "0600"
 
-
-
+```
+{% endcode %}
 
 ### Example run of the finished playbook
+
+Running the finished playbook and listing the files in the folder should look like this. It will be some more devices and run-config files if you modified the inventory to run on more devices.
+
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure></div>
