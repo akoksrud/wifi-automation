@@ -1,2 +1,2 @@
-# 17. Explore YANG-Suite
+# YANG Suite
 
