@@ -1,0 +1,6 @@
+# Exercise: Get client summary
+
+
+
+
+
