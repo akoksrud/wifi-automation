@@ -21,4 +21,4 @@ Refer to the figure:
 2. YANG module
 3. Xpath
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure></div>

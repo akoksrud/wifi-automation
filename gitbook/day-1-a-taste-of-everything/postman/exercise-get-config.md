@@ -4,7 +4,7 @@ You will create a RESTCONF request using YANG models that get the config from yo
 
 Create the Request based on the information explored from [https://yangcatalog.org](https://yangcatalog.org/)
 
-* [ ] At the [https://yangcatalog.org](../yang-models/https-yangcatalog.org.md) website, navigate to <kbd>YANG Module Detail Viewer</kbd> and type/select the module <kbd>Cisco-IOS-XE-native</kbd> . Press "Get Details" and then "Tree View"
+At the [https://yangcatalog.org](../yang-models/https-yangcatalog.org.md) website, navigate to <kbd>YANG Module Detail Viewer</kbd> and type/select the module <kbd>Cisco-IOS-XE-native</kbd> . Press "Get Details" and then "Tree View"
 
 <figure><img src="../../.gitbook/assets/image (78).png" alt="" width="480"><figcaption></figcaption></figure>
 
@@ -48,9 +48,8 @@ https://{{host}}/restconf/data
 
 To find the "Sensor path" you use the field "Module" and "Xpath" in YANG Suite, but you have to substitute the forward slash in Xpath with a colon
 
-<figure><img src="../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
 
-
-
-
-
+```html
+https://{{host}}/restconf/data/Cisco-IOS-XE-native:native
+```
