@@ -1,7 +1,12 @@
 # What is a YANG model?
 
-YANG models are structured representation of configurational and operational data. It is used primarily with NETCONF and RESTCONF. \
-Below is an example of a part of the module <kbd>Cisco-IOS-XE-wireless-client-oper</kbd>
+YANG models are structured representation of configurational and operational data. It is used primarily with NETCONF and RESTCONF.&#x20;
+
+There are YANG models for many ("all") parts of a Cisco IOS-XE device. As an example, here is the different models (also called "modules") for Cisco-IOS-XE-wireless:
+
+<figure><img src="../../.gitbook/assets/image (73).png" alt="" width="549"><figcaption><p>"Config" = Configurational data<br>"Oper" = Operational data</p></figcaption></figure>
+
+As an example, we will pick out one of the modules from Cisco-IOS-XE-wireless, that show operational data on the clients of a WLC. Below is an example of a part of the module <kbd>Cisco-IOS-XE-wireless-client-oper</kbd>
 
 <figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
