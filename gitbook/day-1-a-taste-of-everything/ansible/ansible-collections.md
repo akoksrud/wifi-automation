@@ -57,15 +57,15 @@ community.ciscosmb                       1.0.10
 
 Go to the "Collections Index" and click the "cisco.ios" collection
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (21).png" alt="" width="202"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (21) (1).png" alt="" width="202"><figcaption></figcaption></figure></div>
 
 Click the "ios\_facts" module
 
-![](<../../.gitbook/assets/image (19).png>)
+![](<../../.gitbook/assets/image (19) (1).png>)
 
 Here you will find documentation and examples
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt="" width="419"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1).png" alt="" width="419"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 

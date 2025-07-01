@@ -25,7 +25,7 @@
   * [https://yangcatalog.org](day-1-a-taste-of-everything/yang-models/https-yangcatalog.org.md)
   * [YANG Suite](day-1-a-taste-of-everything/yang-models/yang-suite.md)
   * [pyang (TODO)](day-1-a-taste-of-everything/yang-models/pyang-todo.md)
-  * [(Install YANG-Suite - optional)](day-1-a-taste-of-everything/yang-models/install-yang-suite-optional.md)
+  * [(Install YANG-Suite - optional) - TODO](day-1-a-taste-of-everything/yang-models/install-yang-suite-optional-todo.md)
 * [Postman](day-1-a-taste-of-everything/postman.md)
 * [Python automation](day-1-a-taste-of-everything/python-automation.md)
 * [Install Grafana / TIG-stack](day-1-a-taste-of-everything/install-grafana-tig-stack.md)
