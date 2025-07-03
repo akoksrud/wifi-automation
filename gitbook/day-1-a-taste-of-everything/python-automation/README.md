@@ -10,18 +10,18 @@ Make sure that you have completed the sections [explore-vs-code](../explore-vs-c
 
 You can start by connecting VS Code to your Ubuntu Server if it is not already connected:
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="179"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="179"><figcaption></figcaption></figure>
 
 Connect the current window to host
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Select your server
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Open a folder, and select the <kbd>/home/devnet-adm/wifi-automation</kbd> folder
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
