@@ -6,11 +6,11 @@ VS Code has a great built-in terminal which we will use. When working on a remot
 
 Open the VS Code terminal by going to Terminal -> New Terminal (notice the hotkey to later, you will probably not have the insane Norwegian "ø" character as your hotkey)
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 The code window will split, and you will have a terminal in the lower half of the screen
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
