@@ -2,17 +2,6 @@
 description: >-
   Descriptions to change to static IP if you are using Hyper-V, VirtualBox or
   Proxmox
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Change to static IP

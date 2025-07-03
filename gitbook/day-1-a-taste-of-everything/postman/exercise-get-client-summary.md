@@ -28,7 +28,7 @@ https://{{host}}/restconf/data/Cisco-IOS-XE-wireless-client-oper:client-oper-dat
 ```
 {% endcode %}
 
-Duplicate the previous request as in the previous exercises.
+Duplicate the previous request in Postman, as in the last exercises.
 
 Enter the new path in Postman in the Request you created
 
