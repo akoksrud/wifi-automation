@@ -37,7 +37,7 @@ You will notice a new folder has been created: `~/wifi-automation/.venv`. You co
 
 Now you can go to the file explorer, find the "examples" folder and open the `python-hello-world.py` file that we briefly opened earlier. If you still have it open, great :)
 
-<div align="left"><figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 Notice in the lower right corner of your screen, it will say "Select interpreter". Click that, and a pop-up will appear at the top of your screen asking you to select which Python interpreter to use. Since we have created a virtual environment called ".venv" in the working folder, it will be the recommended Python interpreter. Go ahead and use that.
 
