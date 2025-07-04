@@ -45,7 +45,7 @@ datasources:
     access: proxy
     orgId: 1
     uid: influxdb
-    url: http://influxdb:8086
+    url: http://influxdb:8181
     user: ${INFLUXDB_ADMIN_USER}
     database: ${INFLUXDB_DB}
     isDefault: true

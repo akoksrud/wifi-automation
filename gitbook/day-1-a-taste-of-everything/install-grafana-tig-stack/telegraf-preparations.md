@@ -38,12 +38,12 @@ Add the following text to the telegraf.conf file. You can either open it in VS C
 
 [[outputs.influxdb_v2]]
 urls = [ "http://influxdb:8086" ]
-  token = "${INFLUXDB_ADMIN_TOKEN}"
+  token = "${INFLUXDB_TOKEN}"
   organization = "${INFLUXDB_ORG}"
-  bucket = "${INFLUXDB_BUCKET}"
+  bucket = "${INFLUXDB_DB}"
 # tagexclude = ["influxdb_database"] ### Optional: Exclude specific tags if needed
  [outputs.influxdb_v2.tagpass]
-  influxdb_database = ["${INFLUXDB_BUCKET}"]
+  influxdb_database = ["${INFLUXDB_DB}"]
 
 
 ###############################################################################
@@ -54,7 +54,7 @@ urls = [ "http://influxdb:8086" ]
   transport = "grpc"
   service_address = ":57000"
  [inputs.cisco_telemetry_mdt.tags]
-  influxdb_database =  "${INFLUXDB_BUCKET}"
+  influxdb_database =  "${INFLUXDB_DB}"
 
 ```
 
