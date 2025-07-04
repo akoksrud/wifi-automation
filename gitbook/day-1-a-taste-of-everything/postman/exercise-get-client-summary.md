@@ -6,13 +6,13 @@ Create the Request based on the information explored from [https://yangcatalog.o
 
 At the [https://yangcatalog.org](../yang-models/https-yangcatalog.org.md) website, navigate to <kbd>YANG Module Detail Viewer</kbd> and type/select the module <kbd>Cisco-IOS-XE-wireless-client-oper</kbd> . Press "Get Details" and then "Tree View"
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="423"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt="" width="423"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (80).png" alt="" width="116"><figcaption></figcaption></figure>
 
 Expand the tree until you find what you want to get, the container named <kbd>common-oper-data</kbd> . You may have to use the scroll bar down at the bottom to scroll over to "Sensor Path". The scroll bar might be a bit difficult to find.
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 The "Base RESTCONF path" on a Cisco IOS-XE device is
 
@@ -32,11 +32,11 @@ Duplicate the previous request in Postman, as in the last exercises.
 
 Enter the new path in Postman in the Request you created
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 Press "Send" and you should get a response similar to this. In this example, no users were connected, so it will return "No Content" (status code 204). With connected users you will get some JSON content.
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### YANG Suite alternative
 

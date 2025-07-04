@@ -2,7 +2,7 @@
 
 After creating the "Automation workspace", navigate to <kbd>Environments</kbd> , then click the <kbd>+</kbd> button to create a new environment in the workspace
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 Instead of "New Environment" create a descriptive name, like "Lab devices WLPC"
 

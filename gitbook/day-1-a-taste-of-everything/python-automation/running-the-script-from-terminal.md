@@ -8,7 +8,7 @@ cd ~/wifi-automation/python-get-ap-table/
 python get-ap-table.py
 ```
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure></div>
 
 If there are no APs on the WLC it will have status code 204 (No Content). So it will not print the table etc, if it tried it would produce an error on the "json()\[blablabla] part"
 

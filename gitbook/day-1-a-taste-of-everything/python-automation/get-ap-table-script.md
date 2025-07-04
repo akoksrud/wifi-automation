@@ -32,7 +32,7 @@ else:
 ```
 {% endcode %}
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Import the modules we will use
 2. WLC IP, username and password as input fields, it will be asked when running the script

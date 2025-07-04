@@ -2,12 +2,12 @@
 
 Navigate to <kbd>Workspaces > Create Workspace</kbd>
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt="" width="399"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt="" width="399"><figcaption></figcaption></figure>
 
 Select <kbd>Blank workspace</kbd> , then <kbd>Next</kbd>&#x20;
 
-<p align="center"> <img src="../../.gitbook/assets/image (10) (1).png" alt=""></p>
+<p align="center"> <img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""></p>
 
 Select <kbd>Only me</kbd>, then <kbd>Create</kbd>
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt="" width="264"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1).png" alt="" width="264"><figcaption></figcaption></figure>
