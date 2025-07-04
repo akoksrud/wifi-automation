@@ -37,7 +37,7 @@ Add the following text to the telegraf.conf file. You can either open it in VS C
 
 
 [[outputs.influxdb_v2]]
-urls = [ "http://influxdb:8086" ]
+urls = [ "http://influxdb:8181" ]
   token = "${INFLUXDB_TOKEN}"
   organization = "${INFLUXDB_ORG}"
   bucket = "${INFLUXDB_DB}"

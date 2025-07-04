@@ -9,7 +9,5 @@ cd ~/tig-stack
 docker compose up -d
 ```
 
-
-
-
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure></div>
 

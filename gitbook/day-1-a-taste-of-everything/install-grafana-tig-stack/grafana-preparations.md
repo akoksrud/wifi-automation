@@ -12,8 +12,6 @@ touch ~/tig-stack/grafana/conf/provisioning/datasources/datasources.yaml
 Add the following text to the <kbd>grafana.ini</kbd> file. You can either open it in VS Code or a terminal editor like nano.
 
 ```ini
-[security]
-disable_initial_admin_creation = true
 [feature_toggles]
 dashboardNewLayouts = true
 kubernetesDashboards = true
@@ -46,12 +44,14 @@ datasources:
     orgId: 1
     uid: influxdb
     url: http://influxdb:8181
-    user: ${INFLUXDB_ADMIN_USER}
     database: ${INFLUXDB_DB}
     isDefault: true
+    jsonData:
+      httpHeaderName1: "Authorization"
     secureJsonData:
-      password: ${INFLUXDB_ADMIN_PASSWORD}
+      httpHeaderValue1: "Bearer ${INFLUXDB_TOKEN}"
     version: 1
     editable: true
+    
 ```
 

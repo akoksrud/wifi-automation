@@ -13,7 +13,7 @@ Add the following text to the <kbd>docker-compose.yml</kbd> file. You can either
 services:
   influxdb:
     container_name: influxdb
-    image: influxdb:3-core
+    image: influxdb:3.2.1-core
     expose:
       - 8181
     restart: always
@@ -27,18 +27,12 @@ services:
       - --node-id=influxdb0
       - --object-store=file
       - --data-dir=/var/lib/influxdb3
-    healthcheck:
-      test: ["CMD-SHELL", "curl -f -H 'Authorization: Bearer ${INFLUXDB_TOKEN}' http://localhost:8181/health || exit 1"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
 
   telegraf:
     container_name: telegraf
-    image: telegraf:1.34.1
+    image: telegraf:1.35.1
     depends_on:
-      influxdb:
-        condition: service_healthy
+      - influxdb
     restart: always
     ports:
       - 57000:57000
@@ -51,7 +45,7 @@ services:
 
   grafana:
     container_name: grafana
-    image: grafana/grafana:12.0.1
+    image: grafana/grafana:12.0.2
     expose:
       - 3000
     restart: always
