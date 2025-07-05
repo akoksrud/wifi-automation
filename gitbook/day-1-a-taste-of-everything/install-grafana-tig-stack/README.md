@@ -1,3 +1,7 @@
+---
+description: Section created in cooperation with Kjetil Teigen Hansen (@mrTeigen)
+---
+
 # Install Grafana / TIG-stack
 
 {% hint style="info" %}
