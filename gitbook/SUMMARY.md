@@ -54,6 +54,7 @@
   * [Bring up the TIG stack](day-1-a-taste-of-everything/install-grafana-tig-stack/bring-up-the-tig-stack.md)
   * [Post install configuration](day-1-a-taste-of-everything/install-grafana-tig-stack/post-install-configuration.md)
   * [Troubleshooting](day-1-a-taste-of-everything/install-grafana-tig-stack/troubleshooting.md)
+  * [Optional: GUI alternatives](day-1-a-taste-of-everything/install-grafana-tig-stack/optional-gui-alternatives.md)
 * [Your first Grafana dashboard](day-1-a-taste-of-everything/your-first-grafana-dashboard/README.md)
   * [Create a dashboard](day-1-a-taste-of-everything/your-first-grafana-dashboard/create-a-dashboard.md)
   * [Page 5](day-1-a-taste-of-everything/your-first-grafana-dashboard/page-5.md)
