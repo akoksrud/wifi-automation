@@ -1,10 +1,8 @@
-# Create a dashboard
+# WLC telemetry subscriptions
 
-The first dashboard we will create will be an AP dashboard. On Day 2 you can explore other types of dashboards, and/or build further on this dashboard. If you work primarily with routers, switches, firewalls or other equipment that you have available, feel free to adapt to your liking. It might be easiest to do at least parts of the "hand-held" AP dashboard first.
+For this dashboard we will let the device (WLC) send telemetry data to Telegraf on periodic intervals. The intervals can vary depending on the metrics and how often we need it. Telegraf will then insert the metrics into InfluxDB, and Grafanas dashboards will read the data from InfluxDB.
 
-### Add telemetry subscriptions to WLC
-
-Log in to your WLC using your favorite SSH client
+* [ ] Log in to your WLC using your favorite SSH client
 
 First, check if the subscriptions exist already. Since you are sharing WLCs you will have to create your own subscriptions pointing to your Ubuntu server.
 

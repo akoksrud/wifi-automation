@@ -30,11 +30,11 @@
 
     * cisco.ios.ios\_config
 
-    <div align="left"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt="" width="345"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="345"><figcaption></figcaption></figure></div>
 
     * cisco.ise.endpoint
 
-    <div align="left"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="261"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="261"><figcaption></figcaption></figure></div>
 
 
 
