@@ -11,15 +11,15 @@ description: >-
     * Press F1 on your keyboard
     * In search bar at the top of your screen, type ">" to start command palette
 
-    <div align="center"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="center"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
     * Navigate to Command Palette using the menu View > Command Palette... You can also use the hotkey shown in that menu to open the command palette
 
-    <div align="center"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="center"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
     It will look something like this, and show some of your recently used items, which will differ from the screenshot
 
-    <div align="center"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="center"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 *   [ ] Add a new SSH Host
 
     * Type "remote-ssh" to narrow down the choices. Select "Remote-SSH: Add New SSH Host..."

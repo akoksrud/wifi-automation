@@ -2,7 +2,7 @@
 
 ### TIG stack overview
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Nice looking figure created by Kjetil Teigen Hansen :)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Nice looking figure created by Kjetil Teigen Hansen :)</p></figcaption></figure>
 
 ### Telegraf <img src="../../.gitbook/assets/image (7).png" alt="" data-size="line">
 
