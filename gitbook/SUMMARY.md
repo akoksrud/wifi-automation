@@ -58,7 +58,7 @@
 * [Your first Grafana dashboard](day-1-a-taste-of-everything/your-first-grafana-dashboard/README.md)
   * [WLC telemetry subscriptions](day-1-a-taste-of-everything/your-first-grafana-dashboard/wlc-telemetry-subscriptions.md)
   * [Check data source](day-1-a-taste-of-everything/your-first-grafana-dashboard/check-data-source.md)
-  * [Page 4](day-1-a-taste-of-everything/your-first-grafana-dashboard/page-4.md)
+  * [Create the dashboard](day-1-a-taste-of-everything/your-first-grafana-dashboard/create-the-dashboard.md)
   * [Page 3](day-1-a-taste-of-everything/your-first-grafana-dashboard/page-3.md)
   * [Page 2](day-1-a-taste-of-everything/your-first-grafana-dashboard/page-2.md)
   * [Page](day-1-a-taste-of-everything/your-first-grafana-dashboard/page.md)

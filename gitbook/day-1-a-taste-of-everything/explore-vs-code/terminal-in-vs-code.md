@@ -10,7 +10,7 @@ Open the VS Code terminal by going to Terminal -> New Terminal (notice the hotke
 
 The code window will split, and you will have a terminal in the lower half of the screen
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

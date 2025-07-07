@@ -26,11 +26,11 @@ docker compose up -d
 ### Explore YANG modules
 
 * [ ] Log in to YANG Suite
-* [ ] Go to Explore -> YANG -> Select a YANG. Select a YANG model and click the "Load module(s)" button <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
+* [ ] Go to Explore -> YANG -> Select a YANG. Select a YANG model and click the "Load module(s)" button <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">
 
 <div data-full-width="true"><figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 This is the info you typically use to craft NETCONF and RESTCONF calls (Postman, Python, Ansible, etc) or create streaming telemetry subscriptions (from WLC)
 

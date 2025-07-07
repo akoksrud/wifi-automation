@@ -2,15 +2,15 @@
 
 From the Explorer lage, select "Open Folder"
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="359"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="359"><figcaption></figcaption></figure>
 
 Select (or type) the wifi-automation folder that was created when you used the "git clone" command in the pre-lab tasks
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You will be asked to trust the authors of the files in the folder you are opening.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 First, we will open the Ansible playbook in the examples folder. \
 Go ahead and click the file `ansible-first-playbook.yml` by opening the explorer tab, expanding the "examples" folder, and clicking the file.&#x20;
