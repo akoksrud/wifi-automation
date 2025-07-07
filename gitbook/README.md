@@ -4,6 +4,7 @@ icon: network-wired
 
 # Topology
 
+````mermaid
 ```mermaid
 graph LR
     A[Client] --> B(Load Balancer)
@@ -12,3 +13,5 @@ graph LR
     C --> E[Database];
     D --> E;
 ```
+````
+
