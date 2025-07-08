@@ -51,6 +51,8 @@ Insert your pod IP instead of the {YOUR\_POD\_IP} placeholder...\
 ```yaml
 network:
   version: 2
+  ethernets:
+    eth0:
       dhcp4: false
       dhcp6: false
       addresses:
