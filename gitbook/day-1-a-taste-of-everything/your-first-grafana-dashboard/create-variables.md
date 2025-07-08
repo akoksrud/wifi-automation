@@ -37,11 +37,6 @@ Check if it is working with Run query:
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt="" width="341"><figcaption></figcaption></figure>
 
-Press Apply, then Save dashboard on top of screen
+Press Save on top of screen
 
-<figure><img src="../../.gitbook/assets/image (104).png" alt="" width="375"><figcaption></figcaption></figure>
-
-
-
-
-
+<figure><img src="../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
