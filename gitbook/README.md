@@ -1,20 +1,24 @@
-# About day 2
+---
+description: >-
+  We have lots of tasks to do. Feel free to make your own timeline based on
+  interests. Here is a suggestion for a rough timeline based on feedback from
+  previous deep dives.
+---
 
-Day 2 of the deep dive will contain lots of exercises for each of the topics you touched in the Day 1 content.&#x20;
+# Agenda / timing suggestion
 
-The GitBook documentation for this deep dave is based on the Powerpoint slides from WLPC Prague'24 and Phoenix'25. The Day 2 content is still not fully converted from Powerpoint to GitBook, so please have a look at the Powerpoint slides until the material is fully converted. You can download it from GitHub on [https://github.com/akoksrud/wifi-automation/tree/main/presentations](https://github.com/akoksrud/wifi-automation/tree/main/presentations)
+* Hour 1
+  * Introductions and getting started
+  * Finish the pre-lab tasks
+  * Get to know the lab environment
+  * Install and explore Ansible
+* Hour 2
+  * Explore Python automation
+  * Explore YANG models
+  * Explore Postman
+* Hour 3
+  * Install and explore TIG-stack / Grafana
 
-You should have completed relevant parts of Pre-lab tasks and Day 1 exercises.
 
-For each exercise, we will try to do the following
 
-* Tasks
-  * One or more slides, with one or more tasks
-* Expected output
-* Hints
-  * One or more slides, with hints or code snippets to get you in the right direction
-* Example solution
-  * An example solution (Note that most exercises will have many possible solutions that are better than the example)
-* Example output
-
-Note on error handling:&#x20;Examples in this lab will have minimal error handling to keep the examples small and readable. Depending on the usage (one-off vs. a recurring operations script) you will want some error handling.
+Note: If you want to follow the Powerpoint variant of the deep dive, you can find the slides from WLPC Phoenix'25 (and probably Prague'24) on [https://github.com/akoksrud/wifi-automation/tree/main/presentations](https://github.com/akoksrud/wifi-automation/tree/main/presentations)
