@@ -158,3 +158,5 @@ graph TD
     vlan10 --> Pods
 
 ```
+
+<img src=".gitbook/assets/file.excalidraw.svg" alt="Placeholder topology map" class="gitbook-drawing">
