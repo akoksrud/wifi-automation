@@ -1,7 +1,11 @@
 ---
-icon: network-wired
+icon: hand-wave
+cover: >-
+  .gitbook/assets/Wi-Fi automation logo and text (bgcolor transparent) -
+  wide.png
+coverY: 0
 ---
 
-# Topology
+# Welcome
 
-<div data-full-width="true"><figure><img src=".gitbook/assets/topology.drawio.svg" alt=""><figcaption></figcaption></figure></div>
+Welcome to the documentation for the Wi-Fi Automation Deep Dive
