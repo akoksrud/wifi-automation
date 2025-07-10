@@ -159,4 +159,18 @@ graph TD
 
 ```
 
-<img src=".gitbook/assets/file.excalidraw.svg" alt="Placeholder topology map" class="gitbook-drawing">
+<img src=".gitbook/assets/file.excalidraw (1).svg" alt="Placeholder topology map" class="gitbook-drawing">
+
+```mermaid
+graph LR
+    A[Client] --> B(Load Balancer)
+    B --> C{Server};
+    B --> D{Server};
+    C --> E[Database];
+    D --> E;
+```
+
+
+
+
+
