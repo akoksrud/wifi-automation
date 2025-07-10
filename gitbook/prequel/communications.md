@@ -1,6 +1,0 @@
----
-icon: walkie-talkie
----
-
-# Communications
-

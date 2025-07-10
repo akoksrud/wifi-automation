@@ -1,6 +1,0 @@
----
-icon: asterisk
----
-
-# References / Inspiration
-

@@ -1,6 +1,0 @@
----
-icon: copyright
----
-
-# Copyright
-
