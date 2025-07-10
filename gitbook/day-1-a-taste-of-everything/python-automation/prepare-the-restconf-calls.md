@@ -10,11 +10,11 @@ https://{{host}}/restconf/data/Cisco-IOS-XE-wireless-access-point-oper:access-po
 ```
 {% endcode %}
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 The result should look similar to this:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This will return a lot of data. It might not matter for small deployments or one-off scripts, but if you will run recurring calls on large datasets it might be good to know how to reduce the dataset returned from the device. We do this by using an option in the URL called "fields", and can be done like this (for quite a number of fields, but WAY less than the default number that will be returned)
 

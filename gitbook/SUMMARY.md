@@ -65,3 +65,6 @@
   * [Optional customizations](day-1-a-taste-of-everything/your-first-grafana-dashboard/optional-customizations.md)
   * [Duplicate visualizations](day-1-a-taste-of-everything/your-first-grafana-dashboard/duplicate-visualizations.md)
   * [Add a second visualization](day-1-a-taste-of-everything/your-first-grafana-dashboard/add-a-second-visualization.md)
+  * [Organize the dashboard](day-1-a-taste-of-everything/your-first-grafana-dashboard/organize-the-dashboard.md)
+  * [Ideas for expanding](day-1-a-taste-of-everything/your-first-grafana-dashboard/ideas-for-expanding.md)
+  * [Export as JSON](day-1-a-taste-of-everything/your-first-grafana-dashboard/export-as-json.md)

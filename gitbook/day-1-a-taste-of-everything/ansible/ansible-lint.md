@@ -4,15 +4,15 @@ Linting is a common term in programming/coding for checking the code both for bu
 
 Open the "ansible-first-playbook.yml" again. It should have an error that shows on the last line. Hover your mouse over the line, and a box should pop up with a description. This specific error message say that there is no "new line character" at the end of file, and specifies which rule it violates.
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 Enter a new line at the end of the example file and try saving it again. You will probably get a new error now, because the new line is not empty.
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 Remove the spaces on the line so it is empty, and save again. Now the linter will finally be happy :relaxed:
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -21,4 +21,4 @@ You can also specify ansible-lint to exclude certain errors, we will use the "li
 Open Settings (<kbd>Ctrl-,</kbd>) (that is... Ctrl and comma) and search for "ansible-lint".\
 Enter the value <kbd>-x yaml\[line-length]</kbd>  in the "Lint: Arguments" box.
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
