@@ -8,7 +8,7 @@ Our variable will get all AP names and put them in a selectable list.
 
 Go to Dashboard settings -> Variables
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure></div>
 
 For copy-paste, here is the text in the Query box:
 
@@ -22,7 +22,7 @@ SHOW TAG VALUES WITH KEY = "wtp_name"
 
 We will also create a helper variable. That is a variable that will be used in the dashboards, but it will not be shown as a selection box. This is controlled through the "Show on dashboard" setting.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="514"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="514"><figcaption></figcaption></figure>
 
 1. Do not show the variable selection box on the dashboard
 2. Enter the following text in the Query box:
@@ -35,7 +35,7 @@ SELECT distinct("wtp_mac") FROM "Cisco-IOS-XE-wireless-access-point-oper:access-
 
 Check if it is working with Run query:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="341"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="341"><figcaption></figcaption></figure>
 
 Press Save on top of screen
 

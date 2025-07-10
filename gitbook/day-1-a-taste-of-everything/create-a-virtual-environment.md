@@ -37,23 +37,23 @@ You will notice a new folder has been created: `~/wifi-automation/.venv`. You co
 
 Now you can go to the file explorer, find the "examples" folder and open the `python-hello-world.py` file that we briefly opened earlier. If you still have it open, great :)
 
-<div align="left"><figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 Notice in the lower right corner of your screen, it will say "Select interpreter". Click that, and a pop-up will appear at the top of your screen asking you to select which Python interpreter to use. Since we have created a virtual environment called ".venv" in the working folder, it will be the recommended Python interpreter. Go ahead and use that.
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The text in the lower right corner will change to indicate you are using the virtual environment
 
-<div align="left"><figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 If you (re)open the built-in terminal, the virtual environment will be auto-activated as well. You will see the name of your venv in parentheses at the start of the terminal line.
 
-<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you use a customized shell it might show some other info, like which git branch you are working on ("main"), and the python version of your venv (v3.12.3).
 
-<div align="left"><figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 #### Other project files
 

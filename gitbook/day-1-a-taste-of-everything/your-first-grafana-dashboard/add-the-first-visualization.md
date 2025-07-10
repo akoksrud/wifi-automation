@@ -81,4 +81,4 @@ You will see the descriptions below the graph updated to show the aliases of the
 
 We now have a graph that looks something like this. In the next section we will customize how it looks.
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>

@@ -62,3 +62,6 @@
   * [Create variables](day-1-a-taste-of-everything/your-first-grafana-dashboard/create-variables.md)
   * [Add the first visualization](day-1-a-taste-of-everything/your-first-grafana-dashboard/add-the-first-visualization.md)
   * [Customizing the first visualization](day-1-a-taste-of-everything/your-first-grafana-dashboard/customizing-the-first-visualization.md)
+  * [Optional customizations](day-1-a-taste-of-everything/your-first-grafana-dashboard/optional-customizations.md)
+  * [Duplicate visualizations](day-1-a-taste-of-everything/your-first-grafana-dashboard/duplicate-visualizations.md)
+  * [Add a second visualization](day-1-a-taste-of-everything/your-first-grafana-dashboard/add-a-second-visualization.md)

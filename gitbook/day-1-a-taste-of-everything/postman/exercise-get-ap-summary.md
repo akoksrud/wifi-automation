@@ -6,13 +6,13 @@ Create the Request based on the information explored from [https://yangcatalog.o
 
 At the [https://yangcatalog.org](../yang-models/https-yangcatalog.org.md) website, navigate to <kbd>YANG Module Detail Viewer</kbd> and type/select the module <kbd>Cisco-IOS-XE-wireless-access-point-oper</kbd> . Press "Get Details" and then "Tree View"
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="480"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="480"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (80).png" alt="" width="116"><figcaption></figcaption></figure>
 
 Expand the tree until you find what you want to get, in this case the container named <kbd>capwap-data</kbd> . Also note that the middle of the screenshot is cut away (dotted black line) since it was way to wide to show properly. Use the scroll bar down at the bottom to scroll over to "Sensor Path". The scroll bar might be a bit difficult to find.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The "Base RESTCONF path" on a Cisco IOS-XE device is
 
@@ -30,15 +30,15 @@ https://{{host}}/restconf/data/Cisco-IOS-XE-wireless-access-point-oper:access-po
 
 Duplicate the previous request, then you don't have to enter the Headers again
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Enter the new path in Postman in the Request you created
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 Press "Send" and you should get a response similar to this:
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 ### YANG Suite alternative
 
@@ -50,7 +50,7 @@ https://{{host}}/restconf/data
 
 To find the "Sensor path" you use the field "Module" and "Xpath" in YANG Suite, but you have to substitute the forward slash in Xpath with a colon
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% code fullWidth="true" %}
 ```html
