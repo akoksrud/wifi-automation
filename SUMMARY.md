@@ -1,3 +1,5 @@
 # Table of contents
 
-* [Page](README.md)
+* [Welcome](README.md)
+* [Co-instructors](co-instructors.md)
+* [Topology](topology.md)
