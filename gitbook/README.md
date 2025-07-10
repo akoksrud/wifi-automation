@@ -1,11 +1,20 @@
 ---
-icon: hand-wave
-cover: >-
-  .gitbook/assets/Wi-Fi automation logo and text (bgcolor transparent) -
-  wide.png
-coverY: 0
+description: >-
+  We have lots of tasks to do. Feel free to make your own timeline based on
+  interests. Here is a suggestion for a rough timeline based on feedback from
+  previous deep dives.
 ---
 
-# Welcome
+# Agenda / timing suggestion
 
-Welcome to the documentation for the Wi-Fi Automation Deep Dive
+* Hour 1
+  * Introductions and getting started
+  * Finish the pre-lab tasks
+  * Get to know the lab environment
+  * Install and explore Ansible
+* Hour 2
+  * Explore Python automation
+  * Explore YANG models
+  * Explore Postman
+* Hour 3
+  * Install and explore TIG-stack / Grafana
