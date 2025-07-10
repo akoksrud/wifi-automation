@@ -1,5 +1,6 @@
 # Test the lab environment
 
+* [ ] Check the [Topology](https://app.gitbook.com/s/SuyAOwYOjX3MvmvURpYG/welcome/readme "mention")
 * [ ] Connect your laptop to the wired network
   * Ensure you get DHCP in the range 192.168.10.71-250
   * Ensure you get internet access through the wired connection
