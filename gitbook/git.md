@@ -34,9 +34,9 @@ git config --global user.email "test@test.com"
 If you have a SSH key, you can enable signed commits using that key
 
 ```bash
-git config --global user.signingkey=C:\Users\akoksrud\.ssh\id_ed25519.pub
-git config --global gpg.format=ssh
-git config --global commit.gpgsign=true
+git config --global user.signingkey ~/.ssh/id_ed25519.pub
+git config --global gpg.format ssh
+git config --global commit.gpgsign true
 ```
 
 #### Upload SSH key
