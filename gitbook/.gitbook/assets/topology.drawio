@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="27.2.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.6">
   <diagram name="Lab Topology" id="lab-topology">
-    <mxGraphModel dx="1365" dy="1097" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
+    <mxGraphModel dx="2419" dy="1299" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -301,10 +301,10 @@
           <mxGeometry x="60" y="1040" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rCJ5eUopM_oF1R0QCjyk-90" value="&lt;font face=&quot;Lucida Console&quot;&gt;192.168.10.1-19&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;192.168.10.20-50&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;192.168.10.51-70&lt;/font&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;192.168.10.71-250&lt;/font&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=4;spacingBottom=0;spacingLeft=0;spacingRight=0;spacingTop=0;fontSize=12;" parent="1" vertex="1">
-          <mxGeometry x="119" y="1070" width="130" height="60" as="geometry" />
+          <mxGeometry x="119" y="1070" width="141" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rCJ5eUopM_oF1R0QCjyk-91" value="&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Static Adm IPs:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Pod Ubuntus:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Shared WLCs:&lt;/b&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;DHCP:&lt;/b&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;align=right;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=4;spacingBottom=0;spacingLeft=0;spacingRight=0;spacingTop=0;fontSize=12;" parent="1" vertex="1">
-          <mxGeometry x="23" y="1070" width="100" height="60" as="geometry" />
+          <mxGeometry x="20" y="1070" width="103" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rCJ5eUopM_oF1R0QCjyk-92" value="IP Plan (VLAN 11)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="60" y="1160" width="120" height="30" as="geometry" />
