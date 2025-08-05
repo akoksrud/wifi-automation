@@ -1,24 +1,69 @@
 ---
 description: >-
-  We have lots of tasks to do. Feel free to make your own timeline based on
-  interests. Here is a suggestion for a rough timeline based on feedback from
-  previous deep dives.
+  SSH keys are used to prove who you are, like login to a server or sign a Git
+  commit.
 ---
 
-# Agenda / timing suggestion
+# Create SSH keypair2
 
-* Hour 1
-  * Introductions and getting started
-  * Finish the pre-lab tasks
-  * Get to know the lab environment
-  * Install and explore Ansible
-* Hour 2
-  * Explore Python automation
-  * Explore YANG models
-  * Explore Postman
-* Hour 3
-  * Install and explore TIG-stack / Grafana
+#### References
 
+[https://www.brandonchecketts.com/archives/ssh-ed25519-key-best-practices-for-2025](https://www.brandonchecketts.com/archives/ssh-ed25519-key-best-practices-for-2025)
 
+#### Prerequisites
 
-Note: If you want to follow the Powerpoint variant of the deep dive, you can find the slides from WLPC Phoenix'25 (and probably Prague'24) on [https://github.com/akoksrud/wifi-automation/tree/main/presentations](https://github.com/akoksrud/wifi-automation/tree/main/presentations)
+You need some SSH libraries like OpenSSH installed to run these commands. They should be the same on Windows, Mac or Linux
+
+#### Create a SSH keypair for your user
+
+* Change the comment to something of your choice
+* You can specify a filename using -f "akoksrud\_2025" (as an example). The default filename will be "id\_ed25519", which will be used in the following examples.
+
+```bash
+PS C:\> ssh-keygen -t ed25519 -C "akoksrud_2025"
+```
+
+You should use a password for the private key for security reasons.
+
+Your key pair will be stored in the ".ssh" folder in your home directory, and will be named
+
+* id\_ed25519 (this is your private key, do not share it)
+* id\_ed25519.pub (this is your public key, to be shared with others, uploaded to github, etc)
+
+```powershell
+PS C:\Users\akoksrud> ls ~/.ssh
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          03.10.2024    19:42            419 id_ed25519
+-a---          03.10.2024    19:42            110 id_ed25519.pub
+(...)
+```
+
+#### Copying the public key to a Linux server
+
+First, test that you can log in using usnername and password
+
+```bash
+PS C:\Users\akoksrud> ssh -l devnet-adm 192.168.10.7
+devnet-adm@192.168.10.7's password:
+devnet-adm@ubuntu-7:~$ exit
+```
+
+Then, to copy your public key to the server, enter the following command. It should work on both Windows (using Powershell), MacOS and Linux.
+
+{% code fullWidth="true" %}
+```bash
+cat ~/.ssh/id_ed25519.pub | ssh devnet-adm@{SERVER_IP} "cat >> .ssh/authorized_keys"
+
+# Change {SERVER_IP} to your server's IP, it will be like this:
+cat ~/.ssh/id_ed25519.pub | ssh devnet-adm@192.168.10.7 "cat >> .ssh/authorized_keys"
+```
+{% endcode %}
+
+Alternative method, if you have your public key uploaded to your GitHub account, run the following command to download the key and insert it to the .ssh/authorized\_keys. You have to be logged in to the server to run this command:
+
+```bash
+curl https://github.com/username.keys >> ~/.ssh/authorized_keys
+```
+
+When you login to the server using SSH, you will use the certificate and not be asked for the password
