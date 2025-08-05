@@ -1,2 +1,0 @@
-# CLI show commands
-

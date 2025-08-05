@@ -1,4 +1,0 @@
-# Preparations
-
-## Download Ubuntu Server
-

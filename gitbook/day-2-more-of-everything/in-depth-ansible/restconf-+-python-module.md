@@ -1,2 +1,0 @@
-# RESTCONF + Python module
-

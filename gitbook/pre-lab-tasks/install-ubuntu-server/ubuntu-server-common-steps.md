@@ -1,2 +1,0 @@
-# Ubuntu Server common steps
-

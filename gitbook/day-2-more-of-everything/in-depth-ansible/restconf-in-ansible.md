@@ -1,2 +1,0 @@
-# RESTCONF in Ansible
-

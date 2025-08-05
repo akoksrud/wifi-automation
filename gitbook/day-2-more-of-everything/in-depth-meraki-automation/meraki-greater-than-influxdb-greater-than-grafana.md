@@ -1,2 +1,0 @@
-# Meraki -> InfluxDB -> Grafana
-

@@ -1,2 +1,0 @@
-# MIST -> InfluxDB -> Grafana
-

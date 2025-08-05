@@ -1,2 +1,0 @@
-# Postman MIST API collection
-
